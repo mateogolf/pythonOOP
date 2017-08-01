@@ -10,9 +10,9 @@ class Car(object):
         # for attr, value in self.__dict__.iteritems():
         #     print "{}: {}".format(attr,value)
         print "Price: {}".format(self.price)
-        print "Speed: {}".format(self.speed)
+        print "Speed: {}mph".format(self.speed)
         print "Fuel: {}".format(self.fuel)
-        print "Mileage: {}".format(self.mileage)
+        print "Mileage: {}mpg".format(self.mileage)
         print "Tax: {}".format(self.tax)
         return self
     def taxes(self):
@@ -22,20 +22,20 @@ class Car(object):
             self.tax=0.12
         return self
 
-car1 = Car(2000, "35mph", "Full", "15mpg")
+car1 = Car(2000, 35, "Full", 15)
 car1.display_all()
 
-car2 = Car(2000,"5mph", "Not Full","105mpg")
+car2 = Car(2000,5, "Not Full",105)
 car2.display_all()
 
-car3 = Car(2000,"15mph", "Kind of Full","95mpg")
+car3 = Car(2000,15, "Kind of Full",95)
 car3.display_all()
 
-car4 = Car(2000,"25mph", "Full","25mpg")
+car4 = Car(2000,25, "Full",25)
 car4.display_all()
 
-car5 = Car(2000,"45mph", "Empty","25mpg")
+car5 = Car(2000,45, "Empty",25)
 car5.display_all()
 
-car6 = Car(20000000,"35mph", "Empty","15mpg")
+car6 = Car(20000000,35, "Empty",15)
 car6.display_all()
